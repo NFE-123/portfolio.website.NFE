@@ -1,0 +1,379 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*Color Scheme:
+Honeydew: #F1FFE7; 241, 255, 231
+Melon: #E9AFA3; 233, 175, 163
+Burnt Sienna: #D7705B; 215, 112, 91
+Mint Green: #C2E7DA; 194, 231, 218
+Mint: #45B08B; 69, 176, 139
+Sea-Green: #399373
+Viridian: #2E765C
+Tiffany Blue: #89D1B8; 137, 209, 184
+Space Cadet: #1A1B41; 26, 27, 65
+Night: #080F0F; 8, 15, 15
+*/
+
+/*
+* {
+    box-sizing: border-box;
+}*/
+
+a {
+    color: #1A1B41;
+  }
+  
+  body {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.6;
+      padding: 4px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  a {
+    color: #080F0F;
+  }
+  
+  a:hover {
+    color: #D7705B;
+  }
+  
+  a:focus {
+    color: #D7705B;
+  }
+  
+  a:visited {
+    color: #399373;
+  }
+  
+  a:active {
+    color: #399373;
+  }*/
+  
+  div {
+    padding: 10px; 
+    margin: 10px; 
+   }
+  
+  .button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    color:#F1FFE7;
+  }
+  
+  .button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+    color:#F1FFE7;
+  }
+  
+  .button:visited {
+    color:#F1FFE7
+  }
+  
+  #navigation-list__item--active {
+    text-decoration: none;
+    color:#1A1B41;
+    font-weight: 600;
+    list-style-type: none
+  }
+  
+  #cvbutton {
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+    width:fit-content;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+  
+  .experiencetable {
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+    width:fit-content;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+  
+  .button {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+    width:fit-content;
+    margin-left: 12px;
+    background-color: #1A1B41;
+    color: #F1FFE7;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid; color: #080F0F;
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  
+  .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 97%;
+  }
+  
+  .page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+    width:15%;
+  }
+  
+  .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+  }
+  
+  .navigation-list {
+    list-style-type: none;
+  }
+  
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  .navigation-list__item:hover {
+    color: #D7705B;
+  }
+  
+  .profile__portrait {
+    float: left;
+  }
+  
+  .page-footer {
+    clear: both;
+  }
+  
+  .profile__portrait {
+    float: left;
+    width: 275px;
+    margin-right: 40px;
+  }
+  
+  .about_coffeecake {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+  
+  .profile {
+    max-width: 700px;
+    margin: 0 auto 100px auto;
+  }
+  
+  .about {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .contact {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .grid__item {
+    background-color: #F1FFE7;
+  }
+  
+  .yourproject {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    width:50%
+  }
+  
+  .indexbuttons {
+      width:-webkit-fit-content;
+      width:-moz-fit-content;
+      width:fit-content;
+      margin: 0 auto;
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+      -ms-flex-line-pack: space-evenly;
+          align-content: space-evenly;
+  }
+  .contact-form {
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+    width:fit-content;
+    margin: 0 auto;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-line-pack: space-evenly;
+        align-content: space-evenly;
+  }
+  @media all and (max-width: 500px) {
+      .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+      }
+  }
+  
+  @media all and (min-width: 500px) and (max-width: 750px){
+      .grid {
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+      }
+  }
+  
+  @media all and (max-width: 750px) {
+      .grid {
+        grid-gap: 10px;
+      }
+      .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+      }
+      h1 {
+        font-size: 22px;
+      }
+  }
+  /*Presumably, these colors in the vector image are not applicable to the variable color exercise for Task 1.8*/
+  @-webkit-keyframes color-change {
+    0% {
+      fill: #e8ac22;
+    }
+    50% {
+      fill: #dea54d;
+    }
+    100% {
+      fill: #c26b28;
+    }
+  }
+  @keyframes color-change {
+    0% {
+      fill: #e8ac22;
+    }
+    50% {
+      fill: #dea54d;
+    }
+    100% {
+      fill: #c26b28;
+    }
+  }
+  .cls-20 {
+    -webkit-animation: 4s color-change infinite alternate linear;
+            animation: 4s color-change infinite alternate linear;
+  }
+  @-webkit-keyframes birds-move {
+    from {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+    to {
+      -webkit-transform: translate(200px, 50px);
+              transform: translate(200px, 50px);
+    }
+  }
+  @keyframes birds-move {
+    from {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+    to {
+      -webkit-transform: translate(200px, 50px);
+              transform: translate(200px, 50px);
+    }
+  }
+  .birda {
+    -webkit-animation: 30s birds-move infinite alternate linear;
+            animation: 30s birds-move infinite alternate linear;
+  }
+  .birdc {
+    -webkit-animation: 30s birds-move infinite alternate linear;
+            animation: 30s birds-move infinite alternate linear;
+  }
+  @-webkit-keyframes bird-move-reverse {
+    from {
+      -webkit-transform: translate(446px, 48px);
+              transform: translate(446px, 48px);
+    }
+    to {
+      -webkit-transform: translate(100px, 48px);
+              transform: translate(100px, 48px);
+    }
+  }
+  @keyframes bird-move-reverse {
+    from {
+      -webkit-transform: translate(446px, 48px);
+              transform: translate(446px, 48px);
+    }
+    to {
+      -webkit-transform: translate(100px, 48px);
+              transform: translate(100px, 48px);
+    }
+  }
+  .birdb {
+    -webkit-animation: 34s bird-move-reverse infinite alternate linear;
+            animation: 34s bird-move-reverse infinite alternate linear;
+  }
+    
