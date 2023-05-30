@@ -1,27 +1,18 @@
-/*Color Scheme:
-Honeydew: #F1FFE7; 241, 255, 231
-Melon: #E9AFA3; 233, 175, 163
-Burnt Sienna: #D7705B; 215, 112, 91
-Mint Green: #C2E7DA; 194, 231, 218
-Mint: #45B08B; 69, 176, 139
-Sea-Green: #399373
-Viridian: #2E765C
-Tiffany Blue: #89D1B8; 137, 209, 184
-Space Cadet: #1A1B41; 26, 27, 65
-Night: #080F0F; 8, 15, 15
-*/
 
-/*
 * {
     box-sizing: border-box;
-}*/
+}
 
 :root {
-  --primary-color: #1A1B41;
-  --secondary-color: #399373;
-  --accent-color:#D7705B;
-  --black: #080F0F;
-  --white:#F1FFE7;
+  --primary-color: #AA303E;
+  --primary-lighter-20:#DD6371;
+  --primary-lighter-40: #FF96A4;
+  --secondary-color: #1C3144;
+  --secondary-lighter-20: #4F6477;
+  --secondary-lighter-40:#8297AA;
+  --accent-color:#388697;
+  --black: #1A181B;
+  --white:#F5F5F5;
 }
 
 a {
@@ -83,14 +74,14 @@ div {
 }
 
 .button:visited {
-  color:var(--white)
+  color:var(--white);
 }
 
 #navigation-list__item--active {
   text-decoration: none;
   color:var(--primary-color);
   font-weight: 600;
-  list-style-type: none
+  list-style-type: none;
 }
 
 #cvbutton {
@@ -98,6 +89,11 @@ div {
   margin: 0 auto;
   text-align: center;
   display: block;
+}
+
+#hello {
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .experiencetable {
@@ -118,7 +114,7 @@ div {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid; color: var(--black);
+  border-bottom: 2px solid; color: var(--white);
   transition: opacity 0.2s;
 }
 
@@ -199,7 +195,8 @@ div {
 }
 
 .grid__item {
-  background-color: var(--white);
+  background-color: var(--primary-lighter-20);
+  text-align: center;
 }
 
 .yourproject {
@@ -207,7 +204,7 @@ div {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width:50%
+  width:50%;
 }
 
 .indexbuttons {
