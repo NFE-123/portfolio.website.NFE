@@ -43,6 +43,10 @@ h2 {
 h3 {
   font-size: 22px;
   font-weight: 700;
+  font-style:italic;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -65,17 +69,6 @@ div {
   padding: 10px; 
   margin: 10px; 
  }
-
-.button:hover,
-.button:focus {
-  cursor: pointer;
-  opacity: 0.8;
-  color:var(--white);
-}
-
-.button:visited {
-  color:var(--white);
-}
 
 #navigation-list__item--active {
   text-decoration: none;
@@ -118,6 +111,17 @@ div {
   transition: opacity 0.2s;
 }
 
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+  color:var(--white);
+}
+
+.button:visited {
+  color:var(--white);
+}
+
 .page-header {
   display: flex;
   width: 97%;
@@ -151,19 +155,13 @@ div {
 
 .page-footer {
   clear: both;
+  font-style:italic;
 }
 
 .profile__portrait {
   float: left;
   width: 275px;
   margin-right: 40px;
-}
-
-.about_coffeecake {
-  float: left;
-  width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
 }
 
 .profile {
@@ -207,18 +205,6 @@ div {
   width:50%;
 }
 
-.indexbuttons {
-    width:fit-content;
-    margin: 0 auto;
-    display:flex;
-    align-content: space-evenly;
-}
-.contact-form {
-  width:fit-content;
-  margin: 0 auto;
-  display:flex;
-  align-content: space-evenly;
-}
 @media all and (max-width: 500px) {
     .grid {
       grid-template-columns: 1fr;
@@ -243,44 +229,3 @@ div {
       font-size: 22px;
     }
 }
-/*Presumably, these colors in the vector image are not applicable to the variable color exercise for Task 1.8*/
-@keyframes color-change {
-  0% {
-    fill: #e8ac22;
-  }
-  50% {
-    fill: #dea54d;
-  }
-  100% {
-    fill: #c26b28;
-  }
-}
-.cls-20 {
-  animation: 4s color-change infinite alternate linear;
-}
-@keyframes birds-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-.birda {
-  animation: 30s birds-move infinite alternate linear;
-}
-.birdc {
-  animation: 30s birds-move infinite alternate linear;
-}
-@keyframes bird-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-.birdb {
-  animation: 34s bird-move-reverse infinite alternate linear;
-}
-  

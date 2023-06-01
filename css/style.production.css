@@ -45,6 +45,16 @@ font-weight: 700;
 h3 {
 font-size: 22px;
 font-weight: 700;
+font-style:italic;
+display:-webkit-box;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }
 
 a {
@@ -70,22 +80,6 @@ color: #1C3144;
 div {
 padding: 10px; 
 margin: 10px; 
-}
-
-.button:hover {
-cursor: pointer;
-opacity: 0.8;
-color:#F5F5F5;
-}
-
-.button:focus {
-cursor: pointer;
-opacity: 0.8;
-color:#F5F5F5;
-}
-
-.button:visited {
-color:#F5F5F5;
 }
 
 #navigation-list__item--active {
@@ -137,6 +131,22 @@ border-bottom: 2px solid; color: #F5F5F5;
 transition: opacity 0.2s;
 }
 
+.button:hover {
+cursor: pointer;
+opacity: 0.8;
+color:#F5F5F5;
+}
+
+.button:focus {
+cursor: pointer;
+opacity: 0.8;
+color:#F5F5F5;
+}
+
+.button:visited {
+color:#F5F5F5;
+}
+
 .page-header {
 display: -webkit-box;
 display: -ms-flexbox;
@@ -176,19 +186,13 @@ float: left;
 
 .page-footer {
 clear: both;
+font-style:italic;
 }
 
 .profile__portrait {
 float: left;
 width: 275px;
 margin-right: 40px;
-}
-
-.about_coffeecake {
-float: left;
-width: 250px;
-margin-right: 40px;
-border-radius: 50%;
 }
 
 .profile {
@@ -243,28 +247,6 @@ margin: 0 auto;
 width:50%;
 }
 
-.indexbuttons {
-  width:-webkit-fit-content;
-  width:-moz-fit-content;
-  width:fit-content;
-  margin: 0 auto;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
-}
-.contact-form {
-width:-webkit-fit-content;
-width:-moz-fit-content;
-width:fit-content;
-margin: 0 auto;
-display:-webkit-box;
-display:-ms-flexbox;
-display:flex;
--ms-flex-line-pack: space-evenly;
-    align-content: space-evenly;
-}
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
@@ -290,83 +272,4 @@ display:flex;
   h1 {
     font-size: 22px;
   }
-}
-/*Presumably, these colors in the vector image are not applicable to the variable color exercise for Task 1.8*/
-@-webkit-keyframes color-change {
-0% {
-  fill: #e8ac22;
-}
-50% {
-  fill: #dea54d;
-}
-100% {
-  fill: #c26b28;
-}
-}
-@keyframes color-change {
-0% {
-  fill: #e8ac22;
-}
-50% {
-  fill: #dea54d;
-}
-100% {
-  fill: #c26b28;
-}
-}
-.cls-20 {
--webkit-animation: 4s color-change infinite alternate linear;
-        animation: 4s color-change infinite alternate linear;
-}
-@-webkit-keyframes birds-move {
-from {
-  -webkit-transform: translate(0, 50px);
-          transform: translate(0, 50px);
-}
-to {
-  -webkit-transform: translate(200px, 50px);
-          transform: translate(200px, 50px);
-}
-}
-@keyframes birds-move {
-from {
-  -webkit-transform: translate(0, 50px);
-          transform: translate(0, 50px);
-}
-to {
-  -webkit-transform: translate(200px, 50px);
-          transform: translate(200px, 50px);
-}
-}
-.birda {
--webkit-animation: 30s birds-move infinite alternate linear;
-        animation: 30s birds-move infinite alternate linear;
-}
-.birdc {
--webkit-animation: 30s birds-move infinite alternate linear;
-        animation: 30s birds-move infinite alternate linear;
-}
-@-webkit-keyframes bird-move-reverse {
-from {
-  -webkit-transform: translate(446px, 48px);
-          transform: translate(446px, 48px);
-}
-to {
-  -webkit-transform: translate(100px, 48px);
-          transform: translate(100px, 48px);
-}
-}
-@keyframes bird-move-reverse {
-from {
-  -webkit-transform: translate(446px, 48px);
-          transform: translate(446px, 48px);
-}
-to {
-  -webkit-transform: translate(100px, 48px);
-          transform: translate(100px, 48px);
-}
-}
-.birdb {
--webkit-animation: 34s bird-move-reverse infinite alternate linear;
-        animation: 34s bird-move-reverse infinite alternate linear;
 }
